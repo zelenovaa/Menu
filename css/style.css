@@ -1,0 +1,61 @@
+.menu {
+  display: flex;
+}
+
+.menu li {
+  width: 200px;
+  list-style: none;
+  background: rgb(240, 111, 186);
+  position: relative;
+}
+
+.menu a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+
+.menu li:hover {
+  background: #e8f763;
+}
+
+.menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+.subitem li:nth-child(odd) {
+  background: rgb(150, 150, 247);
+}
+
+.subitem li:nth-child(even) {
+  background: rgb(114, 218, 114);
+}
+
+.subitem li:nth-child(6) {
+  background: rgb(161, 88, 161);
+}
+
+.subitem li:hover {
+  background: #e8f763;
+}
